@@ -1,0 +1,1156 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------ Header ------ */
+
+.header {
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    background-color: rgba(84, 84, 31, 0.8);
+    border: none;
+    z-index: 100;
+}
+
+.header .logo {
+    float: left;
+    color: white;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 20px;
+}
+
+/* ------ header-search ------ */
+
+.header .header-search {
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+.header .header-search input {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+.header .header-search i {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: none;
+    top: 8px;
+    right: 10px;
+}
+
+/* ------ header-links and dropdown ------ */
+
+.header .header-links {
+    position: relative;
+    height: 40px;
+    float: right;
+    top: -25px;
+    right: 40px;
+}
+
+.header a {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header .header-links .header-ul li {
+    display: inline-block;
+    position: relative;
+    color: white;
+    padding: 0px 10px;
+}
+
+.header .header-links .header-ul li a::after {
+    content: "";
+    display: block;
+    width: 0%;
+    height: 3px;
+    background-color: rgba(221, 198, 24, 0.818);
+    transition: 0.3s;
+}
+
+.header .header-links .header-ul li a:hover::after {
+    width: 100%;
+}
+
+.header-submenu {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    top: 130%;
+    left: -30px;
+    list-style: none;
+    border-radius: 10px;
+    background: #ffd2847b;
+    padding: 10px 10px 10px 0px;
+    visibility: hidden;
+    transition: 1s;
+}
+
+.header-dropdown ul li a {
+    display: block;
+    width: 100px;
+    height: 40px;
+    color: rgb(2, 2, 2);
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-decoration: none;
+}
+
+.header-dropdown:hover .header-submenu {
+    visibility: visible;
+    /* display: block; */
+}
+
+/* ------ end of header ------ */
+
+
+
+/* ------ Main content ------ */
+
+/* ----------- hero Content ----------- */
+.Hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Hero-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+.Hero .Hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.55);
+    position: fixed;
+    /* z-index: 0; */
+}
+
+.Hero:hover .Hero-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s;
+}
+
+.Hero .Hero-container {
+    position: absolute;
+    width: 900px;
+    height: auto;
+    color: white;
+    text-align: center;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Hero .Hero-container h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.Hero .Hero-container p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    /* color: rgb(131, 131, 131); */
+    color: rgba(246, 246, 85, 0.598);
+    line-height: 1.5;
+}
+
+.Hero .Hero-container .Hero-btn {
+    width: 180px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.Hero .Hero-container .btn1 {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+.Hero .Hero-container .btn2 {
+    background-color: rgba(182, 153, 24, 0.8);
+    color: rgb(255, 255, 255);
+    margin-right: 20px;
+}
+
+.Hero .Hero-container .btn1:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.Hero .Hero-container .btn2:hover {
+    background-color: rgba(182, 161, 24, 0.5);
+}
+
+/* ------ end of hero Content ------ */
+
+
+/* ---------- First Section ---------- */
+
+.First-section,
+.Sixth-section {
+    width: 100%;
+    height: 1000px;
+    background-color: #f8f9fa;
+    text-align: center;
+    overflow: hidden;
+}
+
+.First-section .First-container,
+.Sixth-section .Sixth-container {
+    width: 70%;
+    height: 500px;
+    margin: auto;
+    margin-top: 140px;
+}
+
+.First-container .First-parent {
+    position: relative;
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.First-section .First-container .First-title,
+.Second-section .Second-container .Second-title,
+.Third-section .Third-container .Third-title,
+.Sixth-section .Sixth-container .Sixth-title,
+.Eighth-section .Eighth-container .Eighth-title,
+.Ninth-section .Ninth-container .Ninth-title {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 100px;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.First-container .First-title {
+    color: #0b3d2e;
+}
+
+.First-section .First-container .First-title::after,
+.Second-section .Second-container .Second-title::after,
+.Third-section .Third-container .Third-title::after,
+.Sixth-section .Sixth-container .Sixth-title::after,
+.Eighth-section .Eighth-container .Eighth-title::after,
+.Ninth-section .Ninth-container .Ninth-title::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(93, 75, 22);
+    margin: auto;
+    margin-top: 10px;
+}
+
+.First-section .First-container .First-div {
+    position: relative;
+    width: 350px;
+    height: 260px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 80px;
+    background-color: #f3f2f2;
+    border: 1px solid #0b3d2e;
+    border-radius: 10px;
+    color: #1c1c1c;
+    text-align: center;
+    z-index: 6;
+}
+
+.First-section .First-container h2 {
+    font-size: 20px;
+    color: #1c1c1c;
+    transition: 0.5s;
+}
+
+.First-section .First-container p {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 700;
+    line-height: 1.6;
+    transition: 0.5s;
+}
+
+.First-section .First-container a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1f7a5c;
+    transition: 0.5s;
+}
+
+.First-container .First-div:hover .content h2 {
+    color: #ffffff;
+}
+
+.First-container .First-div:hover .content p {
+    color: #e0e0e0;
+}
+
+.First-container .First-div:hover .content a {
+    color: #d4af37;
+}
+
+.First-section .First-container .First-div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #0b3d2e;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: -3;
+}
+
+.First-section .First-container .First-div:hover::after {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.First-container .First-div i {
+    font-size: 28px;
+    color: #d4af37;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+.First-section .First-container .First-div:hover .content {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+.First-section .First-container .First-div .content {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.First-section .First-container .First-div .content h2,
+.First-section .First-container .First-div .content p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.First-section .First-container .First-div .content a {
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* ------------- end of First Section ------------- */
+
+
+
+/* ------------ Second Section ------------- */
+
+.Second-section,
+.Third-section,
+.Fourth-section {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid rgb(206, 153, 100); */
+    text-align: center;
+}
+
+.Second-section {
+    background-color: rgba(185, 181, 181);
+}
+
+.Second-section .Second-container,
+.Third-section .Third-container {
+    position: relative;
+    width: 68%;
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.Second-section .Second-section-parent,
+.Third-section .Third-Section-parent {
+    position: relative;
+    width: 975px;
+    height: 600px;
+    margin: auto;
+    margin-top: 50px;
+    /* overflow: hidden; */
+    /* background-color: tomato; */
+}
+
+.Second-section .Second-container .Second-div,
+.Third-section .Third-container .Third-div {
+    position: relative;
+    width: 285px;
+    height: 210px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    border: 1px solid rgb(100, 107, 206);
+    text-align: center;
+    border-radius: 10px;
+    z-index: 6;
+}
+
+.Second-container .Second-div .Overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    visibility: hidden;
+}
+
+.Second-container .Second-div .content {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: white;
+}
+
+.Second-container .Second-div .content h3,
+.Second-container .Second-div .content p {
+    margin-bottom: 8px;
+}
+
+.Second-section .Second-container .Second-div .content i {
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    margin-top: 15px;
+}
+
+.Second-section .Second-container .Second-div:hover .Overlay {
+    visibility: visible;
+}
+
+/* ------------ end of Second Section ------------- */
+
+
+
+/* ------------ Third Section ------------- */
+
+.Third-container .Third-Section-parent .Third-div::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    /* background-color: rgb(102, 17, 221); */
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+.Third-container .Third-Section-parent .Third-div:hover::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.Third-container .Third-Section-parent .Third-div.div1::after {
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.Third-container .Third-div .content {
+    width: 100%;
+    height: 90%;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: left;
+    z-index: 4;
+    /* background-color: red; */
+}
+
+.Third-section .Third-container .Third-div .Third-icon {
+    width: 20%;
+    height: 100%;
+    float: left;
+    font-size: 30px;
+    color: rgb(247, 192, 98);
+    margin-top: 20px;
+    transition: 0.5s;
+    z-index: 4;
+}
+
+/* ------------ end of Third Section ------------- */
+
+
+
+/* ------------ Fourth Section ------------- */
+
+.Fourth-section .Fourth-container {
+    position: relative;
+    width: 80%;
+    height: 95%;
+    margin: auto;
+    /* margin-top: 40px; */
+    /* border: 1px solid rgb(206, 153, 100); */
+    overflow: hidden;
+}
+
+.Fourth-container .Fourth-Sec-p1 {
+    width: 50%;
+    height: 100%;
+    /* background-color: green; */
+    float: left;
+    padding: 20px;
+    text-align: left;
+}
+
+.Fourth-container .Fourth-Sec-p2 {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    float: right;
+    margin-top: 40px;
+    /* background-color: red; */
+}
+
+.Fourth-container .Fourth-Sec-p1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0px 40px 0px;
+}
+
+.Fourth-container .Fourth-Sec-p1 h2::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    background-color: rgb(161, 47, 189);
+    margin-top: 10px;
+}
+
+.Fourth-container .Fourth-Sec-p1 p {
+    font-size: 14px;
+    color: rgb(114, 114, 112);
+    margin-bottom: 40px;
+    word-spacing: 2px;
+    line-height: 20px;
+}
+
+.Fourth-container .Fourth-Sec-p1 ul {
+    list-style: none;
+}
+
+.Fourth-container .Fourth-Sec-p1 ul li {
+    margin-bottom: 45px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+.Fourth-container .Fourth-Sec-p1 ul li i {
+    font-size: 20px;
+    color: rgb(247, 98, 237);
+    margin-right: 5px;
+}
+
+.Fourth-container .Fourth-Sec-p2 img {
+    width: 55%;
+    height: 75%;
+    border-radius: 10px;
+}
+
+.Fourth-container .Fourth-Sec-p2 .Fourth-circule {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.Fourth-container .Fourth-Sec-p2 .circule1 {
+    background-color: rgb(68, 48, 252);
+    right: 52%;
+}
+
+.Fourth-container .Fourth-Sec-p2 .circule2 {
+    background-color: rgb(166, 166, 167);
+    right: 47%;
+}
+
+.Fourth-container .Fourth-Sec-p2 .circule3 {
+    background-color: rgb(166, 166, 167);
+    right: 42%;
+}
+
+.Fourth-container .Fourth-Sec-p2 .circule2:hover,
+.Fourth-container .Fourth-Sec-p2 .circule3:hover {
+    background-color: rgb(160, 48, 252);
+}
+
+/* ------------ end of Fourth Section ------------- */
+
+
+/* ------------ Fifth Section ------------- */
+
+.Fifth-section,
+.Seventh-section {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(255, 255, 255);
+    background-image: url(../images/bg-2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* position: fixed; */
+    overflow: hidden;
+}
+
+.Fifth-overlay,
+.Seventh-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Fifth-section .Fifth-container {
+    position: relative;
+    width: 65%;
+    height: 150px;
+    color: rgb(182, 42, 17);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+}
+
+.Fifth-section .Fifth-container .Fifth-div {
+    width: 170px;
+    height: 150px;
+    margin-left: 110px;
+    float: left;
+    text-align: center;
+    padding: 20px;
+}
+
+.Fifth-section .Fifth-container .Fifth-div i {
+    font-size: 40px;
+    color: rgb(143, 24, 187);
+    margin-bottom: 20px;
+}
+
+/* ------------ end of Fifth Section ------------- */
+
+
+/* ------------ Sixth Section ------------- */
+
+.Sixth-section .Sixth-container {
+    width: 82%;
+    height: 650px;
+    text-align: center;
+}
+
+.Sixth-section .Sixth-container .Sixth-parent {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-top: 50px;
+    /* background-color: tomato; */
+}
+
+.Sixth-container .Sixth-parent .Sixth-div {
+    position: relative;
+    width: 300px;
+    height: 450px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 1px solid rgb(100, 107, 206);
+    border-radius: 10px;
+    text-align: center;
+    z-index: 6;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .Sixth-circule {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(9, 9, 195);
+    margin: auto;
+    margin-top: 50px;
+    padding: 12px 0;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .Sixth-circule .circule-month {
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .Sixth-circule .circule-price {
+    font-size: 35px;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgb(131, 86, 194);
+    opacity: 0;
+    transition: 0.6s;
+    z-index: -5;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div:hover::after {
+    height: 100%;
+    opacity: .8;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .content {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .content ul {
+    list-style: none;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .content ul li {
+    margin-top: 20px;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .btn {
+    margin-top: 60px;
+    font-weight: bold;
+    width: 160px;
+    height: 30px;
+    border: 2px solid rgb(100, 107, 206);
+    border-radius: 10px;
+}
+
+.Sixth-container .Sixth-parent .Sixth-div .btn:hover {
+    background-color: rgb(100, 107, 206);
+    color: white;
+    /* transition: 0.2s; */
+}
+
+/* ------------ end of Sixth Section ------------- */
+
+
+/* ------------ Seventh Section ------------- */
+
+.Seventh-section .Seventh-container {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    color: rgb(182, 42, 17);
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: red; */
+}
+
+.Seventh-section .Seventh-container .Seventh-div {
+    width: 48%;
+    height: 100%;
+    margin-left: 10px;
+    float: left;
+    /* text-align: center; */
+    padding: 20px;
+    /* background-color: greenyellow; */
+}
+
+.Seventh-container .Seventh-div .up-content {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.Seventh-section .Seventh-container .Seventh-div .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 18px;
+    background-image: url(../images/Men-gytar-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.Seventh-section .Seventh-container .Seventh-div .up-content h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* background-color: blue; */
+}
+
+.Seventh-container .Seventh-div p {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+/* ------------ end of Seventh Section ------------- */
+
+/* ------------ eighth Section ------------- */
+
+.Eighth-section,
+.Ninth-section {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.Eighth-section .Eighth-container,
+.Ninth-section .Ninth-container {
+    position: relative;
+    width: 85%;
+    height: 100%;
+    margin: auto;
+    /* margin-top: 50px; */
+    overflow: hidden;
+    /* background-color: seagreen; */
+}
+
+.Eighth-section .Eighth-container .Eighth-parent,
+.Ninth-section .Ninth-container .Ninth-parent {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    margin-top: 100px;
+    /* background-color: tomato; */
+}
+
+.Eighth-container .Eighth-parent .Eighth-div,
+.Ninth-container .Ninth-parent .Ninth-div {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 45px;
+    border: 1px solid rgb(100, 107, 206);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div .Eighth-pic,
+.Ninth-container .Ninth-parent .Ninth-div .Ninth-pic {
+    position: relative;
+    width: 230px;
+    height: 210px;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+    z-index: 2;
+    /* background-color: green; */
+}
+
+.Eighth-container .Eighth-parent .Eighth-div .Eighth-pic img {
+    width: 100%;
+    height: 100%;
+    /* border-radius: 50%; */
+}
+
+.Eighth-container .Eighth-parent .Eighth-div .Eighth-pic .social-media {
+    position: absolute;
+    width: 50px;
+    height: 150px;
+    top: -100%;
+    right: 0;
+    background-color: rgba(98, 48, 180, 0.8);
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div .Eighth-pic .social-media a {
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div::after,
+.Ninth-container .Ninth-parent .Ninth-div::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: rgb(160, 127, 206);
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div:hover::after,
+.Ninth-container .Ninth-parent .Ninth-div:hover::after {
+    /* width: 100%; */
+    height: 100%;
+    opacity: .8;
+    /* transition: 0.6s; */
+}
+
+.Eighth-container .Eighth-parent .Eighth-div:hover .social-media {
+    top: 0;
+    visibility: visible;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div .text {
+    position: absolute;
+    width: 50%;
+    height: 20%;
+    bottom: 15%;
+    left: 25%;
+    padding: 10px;
+    line-height: 40px;
+    z-index: 3;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div:hover h3 {
+    color: white;
+    transition: 0.5s;
+}
+
+.Eighth-container .Eighth-parent .Eighth-div:hover h4 {
+    color: rgb(13, 77, 194);
+    transition: 0.5s;
+}
+
+/* ------------ end of eighth Section ------------- */
+
+/* ------------ Ninth Section ------------- */
+
+.Ninth-section {
+    margin-top: -10px;
+    height: 1150px;
+}
+
+.Ninth-section .Ninth-container {
+    /* margin-top: -200px; */
+    margin-bottom: 100px;
+}
+
+.Ninth-section .Ninth-container .Ninth-parent {
+    width: 80%;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div {
+    height: 650px;
+    width: 380px;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .Ninth-pic {
+    width: 340px;
+    height: 280px;
+    background-image: url(../images/bg-2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .text {
+    position: relative;
+    height: 50%;
+    line-height: 25px;
+    padding: 10px;
+    z-index: 2;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .social-media {
+    position: relative;
+    z-index: 3;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .social-media a {
+    text-decoration: none;
+    margin: 0 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .social-media i {
+    color: rgb(247, 98, 237);
+    font-size: 25px;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .text h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0px;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .text p {
+    color: rgb(93, 75, 22);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div .text a {
+    display: inline-block;
+    /* margin-top: 10px; */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Ninth-container .Ninth-parent .Ninth-div:hover h3 {
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+/* ------------- end of Ninth Section ------------- */
+
+/* ------------- Tenth Section ------------- */
+
+.Tenth-section {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(116, 115, 115);
+    padding: 0 10px;
+    text-align: center;
+    /* margin-top: 50px; */
+}
+
+
+.Tenth-section .Tenth-container {
+    position: relative;
+    width: 18%;
+    height: 100%;
+    margin: auto;
+}
+
+.Tenth-container img {
+    width: 280px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.Tenth-container .Tenth-links a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    padding-top: 8px;
+    margin-bottom: 20px;
+    background-color: rgb(75, 76, 78);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.Tenth-container .tele-circule {
+    position: relative;
+    float: right;
+    margin-right: 8px;
+    margin-top: -2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+}
+
+.tele-circule .telegram {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 53px;
+    color: rgb(75, 76, 78);
+}
+
+.Tenth-container .Tenth-links a.facebook:hover {
+    background-color: rgb(59, 89, 152);
+}
+
+.Tenth-container .Tenth-links a.twitter:hover {
+    background-color: rgb(29, 161, 242);
+}
+
+.Tenth-container .Tenth-links a.instagram:hover {
+    background-color: rgb(193, 53, 132);
+}
+
+.Tenth-container .Tenth-links a.youtube:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.Tenth-container .Tenth-links a.linkedin:hover {
+    background-color: rgb(0, 119, 181);
+}
+
+.Tenth-container .tele-circule:hover {
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
+
+.Tenth-container .Tenth-links .telegram:hover {
+    color: #0088cc;
+    font-size: 45px;
+}
+
+.Tenth-container .copyright {
+    text-align: center;
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    height: 30px;
+    padding: 2px 5px;
+}
